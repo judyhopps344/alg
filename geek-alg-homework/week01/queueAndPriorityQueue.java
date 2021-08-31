@@ -20,6 +20,20 @@ class QueueAndPriorityQueue {
     //     E peek();
     // }
 
+    /**
+     * priorityQue after adding : [1, 3, 2, 4] 
+     * priorityQue remove 1 :[2, 3, 4]
+     * priorityQue : [2, 3, 4] 
+     * priorityQue peek : 2, [2, 3, 4] 
+     * priorityQue poll1 : 2, [3, 4] 
+     * priorityQue remove 1 : false, [3, 4] 
+     * riorityQue poll2 : 3, [4]
+     * priorityQue poll3 : 4, [] 
+     * priorityQue poll4 : null, [] 
+     * Exception in thread "main" java.util.NoSuchElementException at
+     * java.base/java.util.AbstractQueue.remove(AbstractQueue.java:117) at
+     * PriorityQueueDemo.main(priorityQueueDemo.java:40)
+     */
     public static void main(String[] args) {
         PriorityQueue<Integer> priQue = new PriorityQueue<Integer>();
         priQue.add(1);
